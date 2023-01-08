@@ -1121,7 +1121,10 @@ depending on the version of mu4e."
                             (buffer-base-buffer))
                        (format"%s [narrow]" (buffer-base-buffer)))
                       (t
-                       (format-mode-line "%b"))))
+                       (if buffer-file-name
+                           (f-join (f-filename (f-dirname buffer-file-name))
+                                   (f-filename buffer-file-name))
+                         (format-mode-line "%b")))))
 
         (mode-name   (nano-modeline-mode-name))
         (branch      (nano-modeline-vc-branch))
