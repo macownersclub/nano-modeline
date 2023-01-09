@@ -469,8 +469,8 @@ This is similar to the information in `mode-line-misc-info'.
 
 Information:
 - Python Virtual Environment using `pyvenv-virtual-env-name'.
-  The Venv is only shown when active and in a python buffer."
-  (let ((venv (if (and pyvenv-virtual-env-name (eq major-mode 'python-mode))
+  The Venv is only shown when active."
+  (let ((venv (if pyvenv-virtual-env-name
                   (format " %s" pyvenv-virtual-env-name)
                 (format ""))))
     (format venv)))
