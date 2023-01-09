@@ -886,12 +886,14 @@ depending on the version of mu4e."
 (defun nano-modeline-mu4e-view-mode ()
   (let* ((msg     (mu4e-message-at-point))
          (subject (mu4e-message-field msg :subject))
-         (from    (mu4e~headers-contact-str (mu4e-message-field msg :from)))
+         (to    (mu4e~headers-contact-str (mu4e-message-field msg :to)))
          (date     (mu4e-message-field msg :date)))
     (nano-modeline-render (plist-get (cdr (assoc 'mu4e-view-mode nano-modeline-mode-formats)) :icon)
                           (or subject "")
                           ""
-                          (or from "")
+                          (format "[%s]"
+                                  (nano-modeline-mu4e-quote
+                                   (mu4e-context-name (mu4e-context-current))))
                           'read-only)))
 
 (defun nano-modeline-mu4e-view-hook ()
