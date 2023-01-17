@@ -533,6 +533,7 @@ Information:
                     (propertize " " 'face face-modeline))
                 (propertize primary 'face face-primary)))
          (right (concat
+                 (propertize (format "%s " major-mode) 'face face-name)
                  (propertize secondary 'face face-secondary)
                  (if (and (not (eq nano-modeline-prefix 'status))
                           (eq status 'modified))
