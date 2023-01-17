@@ -685,7 +685,7 @@ Information:
   (nano-modeline-render (plist-get (cdr (assoc 'org-capture-mode nano-modeline-mode-formats)) :icon)
                         "Capture"
                         (concat "(" (org-capture-get :description) ")")
-                        "Finish: C-c C-c, refile: C-c C-w, cancel: C-c C-k "))
+                        "Finish: M-s, refile: C-c C-w, cancel: M-w "))
 
 (defun nano-modeline-org-capture-turn-off-header-line ()
   (setq-local header-line-format (default-value 'header-line-format))
