@@ -528,6 +528,8 @@ Information:
                      ;; When do we add space on the left?
                      (if nano-modeline-prefix-padding
                          (propertize " " 'face face-modeline))))
+                (if defining-kbd-macro
+                    (concat (propertize "   " 'face face-primary)))
                 (propertize name 'face face-name)
                 (if (length name)
                     (propertize " " 'face face-modeline))
