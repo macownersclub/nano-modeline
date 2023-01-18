@@ -247,97 +247,97 @@ Then info is provided by `nano-modeline-misc-info'."
 
     (imenu-list-mode        :mode-p nano-modeline-imenu-list-mode-p
                             :format nano-modeline-imenu-list-mode
-                            :icon " ") ;; nerd-font / oct-three-bars
+                            :icon "􀯪") ;; nerd-font / oct-three-bars
     (org-capture-mode       :mode-p nano-modeline-org-capture-mode-p
                             :format nano-modeline-org-capture-mode
                             :on-activate nano-modeline-org-capture-activate
                             :on-inactivate nano-modeline-org-capture-inactivate
-                            :icon " ") ;; nerd-font / oct-calendar
+                            :icon "􀉊") ;; nerd-font / oct-calendar
 
     (prog-mode              :mode-p nano-modeline-prog-mode-p
                             :format nano-modeline-prog-mode
-                            :icon " ") ;; nerd-font / oct-file-code
+                            :icon "􀩚") ;; nerd-font / oct-file-code
     (mu4e-compose-mode      :mode-p nano-modeline-mu4e-compose-mode-p
                             :format nano-modeline-mu4e-compose-mode
-                            :icon " ") ;; nerd-font / oct-pencil
+                            :icon "􀈟") ;; nerd-font / oct-pencil
     (mu4e-headers-mode      :mode-p nano-modeline-mu4e-headers-mode-p
                             :format nano-modeline-mu4e-headers-mode
-                            :icon " ") ;; nerd-font / oct-search
+                            :icon "􀒒") ;; nerd-font / oct-search
     (mu4e-loading-mode      :mode-p nano-modeline-mu4e-loading-mode-p
                             :format nano-modeline-mu4e-loading-mode
-                            :icon " ") ;; nerd-font / oct-gears
+                            :icon "􁎧") ;; nerd-font / oct-gears
     (mu4e-main-mode         :mode-p nano-modeline-mu4e-main-mode-p
                             :format nano-modeline-mu4e-main-mode
-                            :icon " ") ;; nerd-font / oct-inbox
+                            :icon "􀍕") ;; nerd-font / oct-inbox
     (mu4e-view-mode         :mode-p nano-modeline-mu4e-view-mode-p
                             :format nano-modeline-mu4e-view-mode
-                            :icon " ") ;; nerd-font / oct-comment
+                            :icon "􀍙") ;; nerd-font / oct-comment
     (mu4e-dashboard-mode    :mode-p nano-modeline-mu4e-dashboard-mode-p
                             :format nano-modeline-mu4e-dashboard-mode
-                            :icon " ") ;; nerd-font / oct-inbox
+                            :icon "􀍕") ;; nerd-font / oct-inbox
     (messages-mode          :mode-p nano-modeline-messages-mode-p
                             :format nano-modeline-messages-mode
-                            :icon " ") ;; nerd-font / oct-comment
+                            :icon "􀌤") ;; nerd-font / oct-comment
     (text-mode              :mode-p nano-modeline-text-mode-p
                             :format nano-modeline-text-mode
-                            :icon " ") ;; nerd-font / oct-file-text
+                            :icon "􀈿") ;; nerd-font / oct-file-text
     (term-mode              :mode-p nano-modeline-term-mode-p
                             :format nano-modeline-term-mode
-                            :icon " ") ;; nerd-font / oct-term
+                            :icon "􀩼") ;; nerd-font / oct-term
     (vterm-mode             :mode-p nano-modeline-vterm-mode-p
                             :format nano-modeline-term-mode
-                            :icon " ") ;; nerd-font / oct-term
+                            :icon "􀩼") ;; nerd-font / oct-term
     (buffer-menu-mode       :mode-p nano-modeline-buffer-menu-mode-p
                             :format nano-modeline-buffer-menu-mode
                             :on-activate nano-modeline-buffer-menu-activate
                             :on-inactivate nano-modeline-buffer-menu-inactivate
-                            :icon " ") ;; nerd-font / oct-three-bars
+                            :icon "􀯪") ;; nerd-font / oct-three-bars
 
     (calendar-mode          :mode-p nano-modeline-calendar-mode-p
                             :format nano-modeline-calendar-mode
                             :on-activate nano-modeline-calendar-activate
                             :on-inactivate nano-modeline-calendar-inactivate
-                            :icon " ") ;; nerd-font / oct-calendar
+                            :icon "􀉉") ;; nerd-font / oct-calendar
     (completion-list-mode   :mode-p nano-modeline-completion-list-mode-p
                             :format nano-modeline-completion-list-mode
-                            :icon " ") ;; nerd-font / oct-list-unordered
+                            :icon "􀋲") ;; nerd-font / oct-list-unordered
     (deft-mode              :mode-p nano-modeline-deft-mode-p
-      :format nano-modeline-deft-mode
-      :icon " ") ;; nerd-font / oct-search
+                            :format nano-modeline-deft-mode
+                            :icon "􀒒") ;; nerd-font / oct-search
     (doc-view-mode          :mode-p nano-modeline-doc-view-mode-p
                             :format nano-modeline-doc-view-mode
-                            :icon " ") ;; nerd-font / oct-
+                            :icon "􀅴") ;; nerd-font / oct-
     (elfeed-search-mode     :mode-p nano-modeline-elfeed-search-mode-p
                             :format nano-modeline-elfeed-search-mode
                             :on-activate nano-modeline-elfeed-search-activate
                             :on-inactivate nano-modeline-elfeed-search-inactivate
-                            :icon " ") ;; nerd-font / oct-search
+                            :icon "􀤦") ;; nerd-font / oct-search
     (elfeed-show-mode       :mode-p nano-modeline-elfeed-show-mode-p
                             :format nano-modeline-elfeed-show-mode
-                            :icon " ") ;; nerd-font / oct-comment
+                            :icon "􀤦") ;; nerd-font / oct-comment
     (elpher-mode            :mode-p nano-modeline-elpher-mode-p
                             :format nano-modeline-elpher-mode
                             :on-activate nano-modeline-elpher-activate
-                            :icon " ") ;; nerd-font / oct-browser
+                            :icon "􀏜") ;; nerd-font / oct-browser
     (info-mode              :mode-p nano-modeline-info-mode-p
                             :format nano-modeline-info-mode
                             :on-activate nano-modeline-info-activate
                             :on-inactivate nano-modeline-info-inactivate
-                            :icon " ") ;; nerd-font / oct-info
+                            :icon "􀅴") ;; nerd-font / oct-info
     (nano-help-mode         :mode-p nano-modeline-nano-help-mode-p
                             :format nano-modeline-nano-help-mode
-                            :icon " ") ;; nerd-font / oct-info
+                            :icon "􀅴") ;; nerd-font / oct-info
     (org-agenda-mode        :mode-p nano-modeline-org-agenda-mode-p
                             :format nano-modeline-org-agenda-mode
-                            :icon " ") ;; nerd-font / oct-calendar
+                            :icon "􀻤") ;; nerd-font / oct-calendar
     (org-clock-mode         :mode-p nano-modeline-org-clock-mode-p
                             :format nano-modeline-org-clock-mode
                             :on-activate nano-modeline-org-clock-activate
                             :on-inactivate nano-modeline-org-clock-inactivate
-                            :icon " ") ;; nerd-font / oct-clock
+                            :icon "􀣔") ;; nerd-font / oct-clock
     (pdf-view-mode          :mode-p nano-modeline-pdf-view-mode-p
                             :format nano-modeline-pdf-view-mode
-                            :icon " ") ;; nerd-font/ oct-file-pdf
+                            :icon "􀈸") ;; nerd-font/ oct-file-pdf
 
     ;; hooks only last
     (ein-notebook-mode      :on-activate nano-modeline-ein-notebook-activate
@@ -452,8 +452,14 @@ When return value is \"0\", then the section is hidden"
 (defun nano-modeline-unread-email-count ()
   "Return the count of unread emails and ad mail icon."
   (if mu4e-alert-mode-line
-      (concat "  " (progn (string-match "[0-9]+" mu4e-alert-mode-line)
-                           (match-string 0 mu4e-alert-mode-line)) " ")
+      (concat
+       (pcase system-type
+         ('darwin
+          " 􀈧")
+         ((or 'gnu/linux 'windows-nt)
+          "  " ))
+       (progn (string-match "[0-9]+" mu4e-alert-mode-line)
+              (match-string 0 mu4e-alert-mode-line)) " ")
     (format "")))
 
 (defun nano-modeline-maildir-email-count ()
