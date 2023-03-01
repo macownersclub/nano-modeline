@@ -440,14 +440,14 @@ KEY mode name, for reference only. Easier to do lookups and/or replacements.
   "Return the number of the current tab as a string if there are more than 1 tab open.
 Return \"0\" if there is only on tab open.
 When return value is \"0\", then the section is hidden"
-  (number-to-string
-   (if (length> (frame-parameter nil 'tabs) 1)
-       (let* ((current-tab (tab-bar--current-tab))
-              (tab-index (tab-bar--current-tab-index))
-              (explicit-name (alist-get 'explicit-name current-tab))
-              (tab-name (alist-get 'name current-tab)))
-         (if explicit-name tab-name (+ 1 tab-index)))
-     (string-to-number "0"))))
+  (let* ((current-tab (tab-bar--current-tab))
+         (tab-index (tab-bar--current-tab-index))
+         (explicit-name (alist-get 'explicit-name current-tab))
+         (tab-name (alist-get 'name current-tab)))
+    (if explicit-name tab-name
+      (format "%s/%s" (+ 1 tab-index)
+              (number-to-string
+               (length (frame-parameter nil 'tabs)))))))
 
 (defun nano-modeline-unread-email-count ()
   "Return the count of unread emails and ad mail icon."
