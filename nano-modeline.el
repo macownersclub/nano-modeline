@@ -445,7 +445,7 @@ When return value is \"0\", then the section is hidden"
          (explicit-name (alist-get 'explicit-name current-tab))
          (tab-name (alist-get 'name current-tab)))
     (if explicit-name tab-name
-      (format "%s/%s" (+ 1 tab-index)
+      (format "%s|%s" (+ 1 tab-index)
               (number-to-string
                (length (frame-parameter nil 'tabs)))))))
 
@@ -556,9 +556,9 @@ Information:
                      (concat (propertize (nano-modeline-unread-email-count) 'face face-primary)))
                  (if nano-modeline-display-tab-number
                      (if (not (equal "0" (nano-modeline-tab-number)))
-                         (concat (propertize " -" 'face face-secondary)
+                         (concat (propertize " " 'face face-secondary)
                                  (propertize (nano-modeline-tab-number) 'face face-secondary)
-                                 (propertize "- " 'face face-secondary))))
+                                 (propertize " " 'face face-secondary))))
                  (if nano-modeline-display-misc-info
                      (if (not (equal "" (nano-modeline-misc-info)))
                          (concat (propertize (nano-modeline-misc-info) 'face face-primary)
