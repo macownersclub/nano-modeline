@@ -477,7 +477,7 @@ Information:
 - Python Virtual Environment using `pyvenv-virtual-env-name'.
   The Venv is only shown when active."
   (let ((venv (if pyvenv-virtual-env-name
-                  (format " %s" pyvenv-virtual-env-name)
+                  (format " %s " pyvenv-virtual-env-name)
                 (format ""))))
     (format venv)))
 
