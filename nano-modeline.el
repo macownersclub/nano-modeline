@@ -806,10 +806,15 @@ Information:
     mu4e~headers-last-query))
 
 (defun nano-modeline-mu4e-context ()
+  "Extract context from `mu4e--search-last-query'."
+  (if (string-match "/\\(.+?\\)/.*" mu4e--search-last-query)
+      (match-string 1 mu4e--search-last-query) ""))
+
+(defun nano-modeline-mu4e-context ()
   "Return the current mu4e context as a non propertized string."
 
-  (if (> (length (mu4e-context-label)) 0)
-      (concat "(" (substring-no-properties (mu4e-context-label) 1 -1) ")")
+  (if (> (length (nano-modeline-mu4e-context)) 0)
+      (concat "(" (substring-no-properties (nano-modeline-mu4e-context) 0 nil) ")")
     "(none)"))
 
 (defun nano-modeline-mu4e-server-props ()
