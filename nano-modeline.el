@@ -465,7 +465,7 @@ When return value is \"0\", then the section is hidden"
 (defun nano-modeline-maildir-email-count ()
   "Return the count of emails in the current maildir."
   (shell-command-to-string
-   (format "echo -n $(mu find %s 2> /dev/null | wc -l)" mu4e--search-last-query)))
+   (format "printf $(mu find \"%s\" 2> /dev/null | wc -l)" mu4e--search-last-query)))
 
 (defun nano-modeline-misc-info ()
   "Return miscellaneous and useful info if the `major-mode' provides these.
